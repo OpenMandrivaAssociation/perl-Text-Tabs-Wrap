@@ -52,3 +52,22 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 2009.0305-3mdv2011.0
++ Revision: 658449
+- rebuild for updates rpm-setup
+
+* Fri May 15 2009 Jérôme Quelin <jquelin@mandriva.org> 2009.0305-2mdv2010.0
++ Revision: 375889
+- rebuild
+
+* Mon May 11 2009 Jérôme Quelin <jquelin@mandriva.org> 2009.0305-1mdv2010.0
++ Revision: 374455
+- import perl-Text-Tabs+Wrap
+
+
+* Mon May 11 2009 cpan2dist 2009.0305-1mdv
+- initial mdv release, generated with cpan2dist
+

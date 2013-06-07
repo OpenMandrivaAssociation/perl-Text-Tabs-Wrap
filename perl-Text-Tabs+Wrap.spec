@@ -1,17 +1,14 @@
-
 %define realname   Text-Tabs+Wrap
-%define version    2009.0305
-%define release    %mkrel 3
+%define upstream_version 2012.0818
 
 Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
+Version:    %perl_convert_version 2012.0818
+Release:    1
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Wraps lines to make simple paragraphs
-Source:     http://www.cpan.org/modules/by-module/Text/%{realname}-%{version}.tar.gz
+Source:     http://www.cpan.org/modules/by-module/Text/Text-Tabs+Wrap-2012.0818.tar.gz
 Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: perl-devel
 
 
@@ -26,10 +23,8 @@ unexpand will add tabs when it can save bytes by doing so (just like
 
 
 
-
-
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{realname}-%{upstream_version} 
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -39,14 +34,9 @@ unexpand will add tabs when it can save bytes by doing so (just like
 make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc CHANGELOG README
 %{_mandir}/man3/*
 %perl_vendorlib/*
@@ -70,4 +60,5 @@ rm -rf %buildroot
 
 * Mon May 11 2009 cpan2dist 2009.0305-1mdv
 - initial mdv release, generated with cpan2dist
+
 

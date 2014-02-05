@@ -1,13 +1,13 @@
 %define realname   Text-Tabs+Wrap
-%define upstream_version 2012.0818
+%define upstream_version 2013.0523
 
 Name:       perl-%{realname}
-Version:    %perl_convert_version 2012.0818
+Version:    %perl_convert_version %{upstream_version}
 Release:    1
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Wraps lines to make simple paragraphs
-Source:     http://www.cpan.org/modules/by-module/Text/Text-Tabs+Wrap-2012.0818.tar.gz
+Source:     http://www.cpan.org/modules/by-module/Text/Text-Tabs+Wrap-%{upstream_version}.tar.gz
 Url:        http://search.cpan.org/dist/%{realname}
 BuildRequires: perl-devel
 
@@ -60,5 +60,6 @@ make test
 
 * Mon May 11 2009 cpan2dist 2009.0305-1mdv
 - initial mdv release, generated with cpan2dist
+
 
 

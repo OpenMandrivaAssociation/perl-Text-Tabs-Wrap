@@ -9,6 +9,7 @@ Group:      Development/Perl
 Summary:    Wraps lines to make simple paragraphs
 Source:     http://www.cpan.org/modules/by-module/Text/Text-Tabs+Wrap-%{upstream_version}.tar.gz
 Url:        https://search.cpan.org/dist/%{realname}
+BuildRequires:	make
 BuildRequires: perl-devel
 
 

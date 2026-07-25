@@ -2,13 +2,13 @@
 %define upstream_version 2013.0523
 
 Name:       perl-%{realname}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
+Version:    %{upstream_version}
+Release:    4
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Wraps lines to make simple paragraphs
 Source:     http://www.cpan.org/modules/by-module/Text/Text-Tabs+Wrap-%{upstream_version}.tar.gz
-Url:        https://search.cpan.org/dist/%{realname}
+Url:        https://metacpan.org/dist/Text-Tabs-Wrap
 BuildRequires:	make
 BuildRequires: perl-devel
 
